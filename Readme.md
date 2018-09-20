@@ -50,3 +50,12 @@ Run mvn clean install
 a JAR will be generated here:
 
 Run the jar file with the following command
+
+
+With thanks to:
+
+Baeldung
+https://www.baeldung.com/java-microbenchmark-harness
+
+Jenkov
+http://tutorials.jenkov.com/java-performance/jmh.html 
