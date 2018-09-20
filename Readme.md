@@ -51,6 +51,15 @@ a JAR will be generated here:
 
 Run the jar file with the following command
 
+Enable JSON output by adding the --json flag to your command or run:
+
+Visualise your JSON here: https://jmh.morethan.io/  
+
+
+xhttps://github.com/jzillmann/jmh-visualizer
+
+
+
 
 With thanks to:
 
