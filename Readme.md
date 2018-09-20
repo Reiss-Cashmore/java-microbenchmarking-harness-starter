@@ -54,11 +54,7 @@ Run the jar file with the following command
 Enable JSON output by adding the --json flag to your command or run:
 
 Visualise your JSON here: https://jmh.morethan.io/  
-
-![Image of visualise]
-(https://github.com/Reiss-Cashmore/java-microbenchmarking-harness-starter/blob/master/.readmeassets/jmh-visualised.png)
-
-[[https://github.com/Reiss-Cashmore/java-microbenchmarking-harness-starter/blob/master/.readmeassets/jmh-visualised.png|alt=octocat]]
+![jmh-visualised](https://user-images.githubusercontent.com/17616211/45848770-a1291b00-bd27-11e8-8e7c-2d6a650c8fcf.png)
 
 Visualiser Source: https://github.com/jzillmann/jmh-visualizer
 
