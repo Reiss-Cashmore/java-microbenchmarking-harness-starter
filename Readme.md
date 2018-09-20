@@ -55,8 +55,8 @@ Enable JSON output by adding the --json flag to your command or run:
 
 Visualise your JSON here: https://jmh.morethan.io/  
 
-![title] (https://github.com/Reiss-Cashmore/java-microbenchmarking-harness-starter/blob/master/.readmeassets/jmh-visualised.png)
-![alt text] (https://github.com/Reiss-Cashmore/java-microbenchmarking-harness-starter/blob/master/.readmeassets/jmh-visualised.png)
+![Image of visualise] (https://github.com/Reiss-Cashmore/java-microbenchmarking-harness-starter/blob/master/.readmeassets/jmh-visualised.png)
+
 [[https://github.com/Reiss-Cashmore/java-microbenchmarking-harness-starter/blob/master/.readmeassets/jmh-visualised.png|alt=octocat]]
 
 Visualiser Source: https://github.com/jzillmann/jmh-visualizer
