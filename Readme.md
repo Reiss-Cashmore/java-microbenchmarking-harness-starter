@@ -67,11 +67,14 @@ java -jar benchmarks.jar -rf json
 
 > You can export your benchmark to other formats, to see them run: `java -jar benchmarks.jar -lrf`
 
-For more check out the wiki:
-Writing a benchmark
-Useful Articles
 
-# Visualise your JSON: 
+# For more information check out the wiki:  
+### [Writing A Benchmark](https://github.com/Reiss-Cashmore/java-microbenchmarking-harness-starter/wiki/Writing-A-Benchmark)  
+### [Useful Articles](https://github.com/Reiss-Cashmore/java-microbenchmarking-harness-starter/wiki/Useful-Articles)  
+### [Visualising Benchmarks](https://github.com/Reiss-Cashmore/java-microbenchmarking-harness-starter/wiki/Visualising-Benchmarks)  
+### [Benchmarking Decorators](https://github.com/Reiss-Cashmore/java-microbenchmarking-harness-starter/wiki/Benchmarking-Decorators)  
+
+# Visualise your JSON benchmark output: 
 https://jmh.morethan.io/  
 ![jmh-visualised](https://user-images.githubusercontent.com/17616211/45848849-db92b800-bd27-11e8-9398-76fbf3986e57.png)
 
