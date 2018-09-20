@@ -60,13 +60,12 @@ mvn clean install
 ```
 java -jar target/benchmarks.jar
 ```
-Enable JSON output by adding the --json flag to your command or run:  
+Enable JSON output by adding the `-rf json` and `-rff ./path-for-output/filename`, i.e:  
 ```
-java -jar benchmarks.jar -rf json
+java -jar benchmarks.jar -rf json -rff ./benchmark-output
 ```
 
-> You can export your benchmark to other formats, to see them run: `java -jar benchmarks.jar -lrf`
-
+> You can export your benchmark to other formats, to see them run: `java -jar benchmarks.jar -lrf`  
 
 # For more information check out the wiki:  
 ### [Writing A Benchmark](https://github.com/Reiss-Cashmore/java-microbenchmarking-harness-starter/wiki/Writing-A-Benchmark)  
@@ -78,7 +77,18 @@ java -jar benchmarks.jar -rf json
 https://jmh.morethan.io/  
 ![jmh-visualised](https://user-images.githubusercontent.com/17616211/45848849-db92b800-bd27-11e8-9398-76fbf3986e57.png)
 
+# Useful command line arguments
 
+**List benchmarks**
+``
+java -jar target/benchmarks.jar -l
+``  
+
+**Specify an individual benchmark file to be run**
+```
+java -cp target/benchmark.jar com.org.benchmarking.SimpleBenchmark 
+java -cp target/benchmark.jar com.tutorial.jmh.ExtendedBenchmark 
+```
 ## With thanks to:
 **jzillmann**
 https://github.com/jzillmann/  
