@@ -1,71 +1,85 @@
-Getting Started
+# Getting Started
+Using JMH is easy!
 
-Using JMH is easy.
-
-Install Java JDK on your platform (8+)
-
-Mac OSX
-using Homebrew
-
+## 1. Install Java JDK on your platform (Version 8+)  
+**Using the terminal to install the JDK globally**  
+  
+**Mac OSX** with Homebrew*  
+```
 brew cask install java
- 
+```
+
+**Linux**  
+```
+sudo apt-get install openjdk-8-jdk
+```  
+
+## OR 
+### Download the Tar files and install manually  
+**For Linux, Mac OSX and Windows**  
 http://www.oracle.com/technetwork/java/javase/downloads/index.html
 
-Linux
-sudo apt-get install openjdk-8-jdk 
+***
 
-OR you can find the tars here too
+> Validate you have installed the JDK correctly by running the following in your terminal:
+```
+javac -version
+```  
 
-http://www.oracle.com/technetwork/java/javase/downloads/index.html
+## 2. Installing maven
 
-test by running
-"javac -version" in your terminal
-
-Install maven
-
-Globally
-
-Linux
-sudo apt-get install maven 
-Mac OSX
-
-Usoinf Homebrew
+### Using the terminal to install maven globally
+  
+**Mac OSX** with Homebrew*  
+```
 brew install maven
+```
 
-Locally
-Mac OSX, Linux & Windows
+**Linux**  
+```
+sudo apt-get install maven
+```  
 
-You can install just unpack maven into your project folder
-http://maven.apache.org/download.cgi 
+### Local install using the maven package  
+  
+**Mac OSX, Linux & Windows**  
+  
+You can just download and unpack maven into your project folder, either run the `mvn` from within the `/bin/` directory of the package or add a PATH variable/alias so that you can use the `mvn` command easily  
+**Maven Package Download:** http://maven.apache.org/download.cgi  
+**Install Instructions:** https://maven.apache.org/install.html
 
-Write your benchmarking file and save it here:
+## 3. Compile benchmarks  
+**Run:**  
+```
+mvn clean install
+```  
+**This will generate a benchmarks.jar in: /target**
 
-Example:
-Code
+## 4. Run the benchmarks  
+**Run the following command**
+```
+java -jar target/benchmarks.jar
+```
+Enable JSON output by adding the --json flag to your command or run:  
+```
+java -jar benchmarks.jar -rf json
+```
 
-Benchmarking decorations documentation
+> You can export your benchmark to other formats, to see them run: `java -jar benchmarks.jar -lrf`
 
-Run mvn clean install
+For more check out the wiki:
+Writing a benchmark
+Useful Articles
 
-a JAR will be generated here:
-
-Run the jar file with the following command
-
-Enable JSON output by adding the --json flag to your command or run:
-
-Visualise your JSON here: https://jmh.morethan.io/  
+# Visualise your JSON: 
+https://jmh.morethan.io/  
 ![jmh-visualised](https://user-images.githubusercontent.com/17616211/45848849-db92b800-bd27-11e8-9398-76fbf3986e57.png)
 
-Visualiser Source: https://github.com/jzillmann/jmh-visualizer
 
-
-
-
-With thanks to:
-jzillmann
-
-Baeldung
-https://www.baeldung.com/java-microbenchmark-harness
-
-Jenkov
+## With thanks to:
+**jzillmann**
+https://github.com/jzillmann/  
+**Baeldung**
+https://www.baeldung.com/java-microbenchmark-harness  
+**jenkov**
 http://tutorials.jenkov.com/java-performance/jmh.html 
