@@ -79,15 +79,15 @@ https://jmh.morethan.io/
 
 # Useful command line arguments
 
-**List benchmarks**
-``
+**List benchmarks**  
+``` 
 java -jar target/benchmarks.jar -l
-``  
+```  
 
 **Specify an individual benchmark file to be run**
 ```
 java -cp target/benchmark.jar com.org.benchmarking.SimpleBenchmark 
-java -cp target/benchmark.jar com.tutorial.jmh.ExtendedBenchmark 
+java -cp target/benchmark.jar com.org.benchmarking.ExtendedBenchmark 
 ```
 ## With thanks to:
 **jzillmann**
